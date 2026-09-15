@@ -33,6 +33,9 @@ a, p, h2, h1{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.share:hover {
+    background-color: grey;
+}
 .fake-priv-contain {
     display: grid;
     place-items: center;
@@ -68,7 +71,21 @@ hr {
     width: 80%;
     background-color: #222222;
 }
-.gallery-item {
-    width: 33%;
-    height: 33%;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2px;
 }
+.gallery-img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.gallery-img:hover {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+
