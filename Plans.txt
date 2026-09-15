@@ -1,0 +1,2 @@
+Instagram clone as my portfolio *
+Fade in info on hover
