@@ -1,5 +1,6 @@
 body {
     background-color: #121212;
+    font-family: Verdana, sans-serif;
 }
 header {
     display: flex;
@@ -7,7 +8,7 @@ header {
     font-family: Verdana, sans-serif;
     justify-content: center;
 }
-a, p, h2, h1{
+a, p, h2, h1, h3{
     color: white;
     text-decoration: none;
 }
@@ -73,19 +74,112 @@ hr {
 }
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px
 }
 .gallery-img {
-    aspect-ratio: 1/1;
     width: 100%;
     height: 100%;
-    opacity: 1;
-    transition: 0.5s ease;
+    background-color: #121212;
 }
 .gallery-img:hover {
-    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    opacity: 0.5;
+    transition: .5s ease;
+}
+#expOne {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
     transition: 0.5s ease;
 }
-
-
+#expOne:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+#expTwo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    transition: 0.5s ease;
+}
+#expTwo:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+.post-window {
+    position: relative;
+    background-color: #1f1f1f;
+    padding: 100px;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    gap: 5%;
+}
+.post-close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+.post-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.post-img {
+    width: 500px;
+    height: 500px;
+}
+.post-caption {
+    position: fixed;
+    text-align: center;
+    bottom: 20%;
+}
+.post-info {
+    width: 100%;
+}
+.xOut {
+    width: 15px;
+}
+.heart {
+    width: 5%;
+}
+.comments {
+    width: 4.5%;
+}
+.icons {
+    position: fixed;
+    bottom: 25%;
+}
+.comment-pic {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.comment {
+    display: flex;
+    gap: 5%;
+}
+.dates {
+    color: grey;
+    position: fixed;
+    text-align: center;
+    bottom: 17%;
+}
