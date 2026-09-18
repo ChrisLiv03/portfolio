@@ -193,14 +193,19 @@ hr {
     width: 15px;
 }
 .heart {
-    width: 5%;
+    width: 3%;
 }
 .comments {
-    width: 4.5%;
+    width: 2.5%;
+}
+.git {
+    width: 7%;
 }
 .icons {
     position: fixed;
     bottom: 25%;
+    display: flex;
+    gap: 10px;
 }
 .comment-pic {
     border-radius: 100%;
