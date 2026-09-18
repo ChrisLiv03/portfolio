@@ -12,6 +12,11 @@ a, p, h2, h1, h3{
     color: white;
     text-decoration: none;
 }
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: fill;
+}
 .pro-pic {
     border-radius: 100%;
     width: 10%;
@@ -193,13 +198,24 @@ hr {
     width: 15px;
 }
 .heart {
-    width: 3%;
+    width: 5%;
+    fill: white;
+}
+.heart:hover {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(95%) saturate(6924%) hue-rotate(360deg) brightness(110%) contrast(106%);
+    cursor: pointer;
 }
 .comments {
-    width: 2.5%;
+    width: 4%;
+}
+.comments:hover {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(94%) saturate(2457%) hue-rotate(197deg) brightness(102%) contrast(107%);
 }
 .git {
-    width: 7%;
+    width: 100%;
+}
+.git:hover {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(94%) saturate(1006%) hue-rotate(73deg) brightness(97%) contrast(122%);
 }
 .icons {
     position: fixed;
@@ -222,4 +238,7 @@ hr {
     position: fixed;
     text-align: center;
     bottom: 17%;
+}
+.git_target {
+    width: 5%;
 }
